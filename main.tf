@@ -19,3 +19,11 @@ module "vpc" {
     ttl = var.ttl
   }
 }
+
+output "vpc_id" {
+  value = module.vpc.aws_vpc.id
+}
+
+output "demo_subnet" {
+  value = module.vpc.aws_subnet.private[1].id
+}
