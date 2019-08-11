@@ -16,5 +16,6 @@ module "vpc" {
     Terraform = "true"
     Environment = var.env 
     Owner = var.owner
+    TTL = var.ttl
   }
 }
