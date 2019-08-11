@@ -22,10 +22,5 @@ module "vpc" {
 
 output "vpc_id" {
   description = "The ID of the VPC"
-  value       = module.vpc.aws_vpc.this.0.id
-}
-
-output "primary_private_subnet" {
-  description = "List of IDs of private subnets"
-  value       = module.vpc.aws_subnet.private.0.id
+  value       = module.vpc.vpc_id
 }
