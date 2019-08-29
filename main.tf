@@ -24,3 +24,8 @@ output "vpc_id" {
   description = "The ID of the VPC"
   value       = module.vpc.vpc_id
 }
+
+output "module_version" {
+  description = "module version"
+  value       = module.vpc.version
+}
