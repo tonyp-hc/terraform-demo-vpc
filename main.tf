@@ -24,3 +24,8 @@ output "vpc_id" {
   description = "The ID of the VPC"
   value       = module.vpc.vpc_id
 }
+
+output "primary_subnet" {
+  description = "primary private subnet"
+  value       = module.vpc.private_subnets[0]
+}
