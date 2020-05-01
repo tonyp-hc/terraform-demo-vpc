@@ -1,6 +1,6 @@
 module "vpc" {
   source  = "app.terraform.io/TonyPulickal/vpc/aws"
-  version = "2.21.0"
+  version = "2.33.0"
 
   name = var.name
   cidr = "10.0.0.0/16"
