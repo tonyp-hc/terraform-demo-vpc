@@ -15,7 +15,7 @@ module "vpc" {
   tags = {
     terraform = var.terraform 
     Environment = var.env 
-    owner = var.owner
+//    owner = var.owner
     ttl = var.ttl
     purpose = var.purpose
     se-region = var.se-region  
