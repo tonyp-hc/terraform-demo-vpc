@@ -13,10 +13,12 @@ module "vpc" {
   enable_vpn_gateway = false 
 
   tags = {
-    Terraform = "true"
+    terraform = var.terraform 
     Environment = var.env 
     owner = var.owner
     ttl = var.ttl
+    purpose = var.purpose
+    se-region = var.se-region  
   }
 }
 
